@@ -1,0 +1,18 @@
+{% load crispy_forms_tags %}
+<html>
+    <head>
+        </head>
+    <body style="background: #7aaecc ">
+        <h1>Contact </h1>
+        <h4>Contact Us directly if you have any questions </h4>
+        <p>
+            please write you name , your email , your message if you have any questions 
+            One of our staff members will be happy to contact with you directly and answer your questions as soon as possible
+        </p>
+        <form action="" method="post">
+            {%csrf_token%}
+            {{form|crispy}}
+            <input type="submit" value="Send Message">
+            </form>
+        </body>
+    </html>

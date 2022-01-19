@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reigster Page
+            </title>
+        </head>
+    <body>
+
+        <form action="" method="POST">
+            {{}}
+            <buttom type="Submit" value="submit">
+            </form>
+        </body>
+    </html>
+
+
+    {% load crispy_forms_tags %}
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Reigster Page
+                </title>
+            </head>
+        <body>
+            <h1>Register Form</h1>
+            <form action="" method="POST">
+                {%csrf_token%}
+                {{form|crispy}}
+                <buttom type="Submit" value="submit">
+                </form>
+            </body>
+        </html>
