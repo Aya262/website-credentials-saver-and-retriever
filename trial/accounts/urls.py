@@ -11,5 +11,6 @@ urlpatterns=[
     path('contact/<int:id>/',contact,name='contact'),
     path('profile/<int:id>/',profile,name='profile'),
     path('update/<int:id>/',updatewebsite,name='update'),
-    path('delete/<int:id>/',deletewebsite,name='delete')
+    path('delete/<int:id>/',deletewebsite,name='delete'),
+    path('',index,name='index')
 ]
